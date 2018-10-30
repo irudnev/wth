@@ -5,7 +5,14 @@
  "start_url": "/",
  "display": "standalone",
  "theme_color": "#ff9966",
+ "background_color": "#ff9966",
+
  "icons": [
+  {
+   "src": "\/icons/weather-640.png",
+   "sizes": "512x512",
+   "type": "image\/png"
+  },
   {
    "src": "\/icons/android-icon-36x36.png",
    "sizes": "36x36",
