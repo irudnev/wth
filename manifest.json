@@ -3,7 +3,8 @@
  "short_name": "Weather",
  "lang": "ru-RU",
  "start_url": "\/wth\/",
- "display": "standalone",
+ "display": "fullscreen",
+ "orientation": "landscape",
  "theme_color": "#ff9966",
  "background_color": "#ff9966",
 
