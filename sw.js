@@ -4,8 +4,8 @@ importScripts('sw-toolbox.js');
 
 toolbox.precache(["index.html","style.css"]);
 
-toolbox.router.get('/image/*', toolbox.cacheFirst);
+toolbox.router.get('/wth/image/*', toolbox.cacheFirst);
 
-toolbox.router.get('/*', toolbox.networkFirst, {
+toolbox.router.get('/wth/*', toolbox.networkFirst, {
   networkTimeoutSeconds: 5
 });
