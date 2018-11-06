@@ -1,0 +1,110 @@
+body {
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 10%;
+	background: #ff9966 url("image/autumn.jpg") no-repeat fixed;
+	background-size: cover;
+	font-size: 1.2em;
+}
+
+#container {
+	display: flex;
+}
+
+.ball {
+	position: absolute;
+	width: 1em;
+	height: 1em;
+	margin: 0.1em;
+	border-radius: 0.5em;
+	background-color: red;
+	display: block;
+
+    animation-duration: 1.5s;
+    animation-delay: -500ms;
+    animation-iteration-count: infinite;
+    /*animation-direction: alternate;*/
+    animation-timing-function: ease;
+}
+
+/* The animation code */
+@keyframes ball1_anim {
+    /*from {background-color: red; margin-left: 0;}
+    to {background-color: yellow; margin-left: -1em;}*/
+    3%		{ margin-left: 0; background-color: red; }
+    14%		{ margin-left: -1em; background-color: yellow; }
+    35%		{ margin-left: -1em; background-color: yellow; }
+    48%		{ margin-left: 0; background-color: yellow; }
+    50%		{ margin-left: 0.1em; background-color: red; }
+    55%		{ margin-left: 0; }
+    60%		{ margin-left: -0.1em; }
+    65%     { margin-left: 0; }
+    100%	{ margin-left: 0; }
+}
+
+@keyframes ball2_anim {
+    0%		{ margin-left: 1.1em; background-color: red; }
+    10%		{ margin-left: 1.0em; background-color: yellow; }
+    20%		{ margin-left: 1.1em; background-color: red; }
+    50%		{ margin-left: 1.1em; background-color: red; }
+    51%     { margin-left: 1.2em; background-color: yellow; }
+    53%		{ margin-left: 1.0em; background-color: red; }
+    55%		{ margin-left: 1.1em; background-color: red; }
+}
+
+@keyframes ball3_anim {
+    1%		{ margin-left: 2.2em; background-color: red; }
+    3%		{ margin-left: 2.1em; background-color: yellow; }
+    5%		{ margin-left: 2.2em; background-color: red; }
+    51%		{ margin-left: 2.2em; background-color: red; }
+    53%		{ margin-left: 2.3em; background-color: yellow; }
+    55%		{ margin-left: 2.2em; background-color: red; }
+}
+
+@keyframes ball4_anim {
+    0%		{ margin-left: 3.3em; background-color: red; }
+    1%      { margin-left: 3.2em; background-color: yellow; }
+    3%		{ margin-left: 3.4em; background-color: red; }
+    5%		{ margin-left: 3.3em; }
+    50%		{ margin-left: 3.3em; background-color: red; }
+    60%		{ margin-left: 3.4em; background-color: yellow; }
+    70%		{ margin-left: 3.3em; background-color: red; }
+}
+
+@keyframes ball5_anim {
+    0%      { margin-left: 4.3em; background-color: red; }
+    5%      { margin-left: 4.4em; }
+    10%     { margin-left: 4.5em; }
+    15%     { margin-left: 4.4em; }
+    53%		{ margin-left: 4.4em; background-color: red; }
+    64%		{ margin-left: 5.4em; background-color: yellow; }
+    85%		{ margin-left: 5.4em; background-color: yellow; }
+    98%		{ margin-left: 4.4em; background-color: yellow; }
+    100%	{ margin-left: 4.3em; background-color: yellow; }
+}
+
+/* The element to apply the animation to */
+.ball_first {
+	margin-left: 0;
+    animation-name: ball1_anim;
+}
+
+.ball2 {
+	margin-left: 1.1em;
+	animation-name: ball2_anim;
+}
+
+.ball3 {
+	margin-left: 2.2em;
+	animation-name: ball3_anim;
+}
+
+.ball4 {
+	margin-left: 3.3em;
+	animation-name: ball4_anim;
+}
+
+.ball_last {
+	margin-left: 4.4em;
+	animation-name: ball5_anim;
+}
