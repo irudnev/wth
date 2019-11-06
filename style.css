@@ -11,6 +11,10 @@ body {
 	display: inline-flex;
 }
 
+.container div {
+	padding-right: 1em;
+}
+
 a {
   pointer-events: none;
   cursor: default;
