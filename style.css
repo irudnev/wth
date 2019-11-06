@@ -6,3 +6,8 @@ body {
 	background-size: cover;
 	font-size: 1.2em;
 }
+
+a {
+  pointer-events: none;
+  cursor: default;
+}
