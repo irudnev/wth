@@ -5,6 +5,7 @@ body {
 	background: #ff9966 url("image/autumn.jpg") no-repeat fixed;
 	background-size: cover;
 	font-size: 1.2em;
+	display: inline-flex;
 }
 
 a {
