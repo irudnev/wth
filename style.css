@@ -11,8 +11,8 @@ body {
 	display: inline-flex;
 }
 
-.container div {
-	padding-right: 1em;
+.container>div {
+	margin-right: 2em;
 }
 
 a {
